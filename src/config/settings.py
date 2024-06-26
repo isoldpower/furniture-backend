@@ -22,12 +22,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'image.apps.ImageConfig',
-    'product.apps.ProductConfig',
-    'section.apps.SectionConfig',
     'call_request.apps.CallRequestConfig',
+    'catalogue.apps.CatalogueConfig',
     'settings.apps.SettingsConfig',
     'advantage.apps.AdvantageConfig',
-    'material.apps.MaterialConfig',
     'portfolio.apps.PortfolioConfig',
 ]
 

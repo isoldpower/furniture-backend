@@ -2,7 +2,7 @@ from django.utils.translation import gettext_lazy as _
 from django.apps import AppConfig
 
 
-class MaterialConfig(AppConfig):
+class CatalogueConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "material"
-    verbose_name = _("Material")
+    name = "catalogue"
+    verbose_name = _("Catalogue")
