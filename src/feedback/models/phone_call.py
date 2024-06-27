@@ -1,7 +1,7 @@
 from django.utils.translation import gettext_lazy as _
 from django.db import models
 
-from call_request.models.abstracts import CallRequest
+from feedback.models.abstracts import CallRequest
 
 
 class PhoneCallRequest(CallRequest):

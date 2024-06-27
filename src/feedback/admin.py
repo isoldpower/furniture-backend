@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from call_request.models.phone_call import PhoneCallRequest
+from feedback.models.phone_call import PhoneCallRequest
 
 
 class PhoneCallRequestInline(admin.TabularInline):
