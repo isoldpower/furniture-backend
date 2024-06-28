@@ -1,0 +1,2 @@
+from .advantage import MaterialAdvantageSerializer, FirmAdvantageSerializer
+from .image import DoublesidedImageSerializer

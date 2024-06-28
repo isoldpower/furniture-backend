@@ -21,12 +21,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'image.apps.ImageConfig',
-    'feedback.apps.FeedbackConfig',
-    'catalogue.apps.CatalogueConfig',
-    'settings.apps.SettingsConfig',
-    'advantage.apps.AdvantageConfig',
-    'portfolio.apps.PortfolioConfig',
+    'apps.feedback.apps.FeedbackConfig',
+    'apps.catalogue.apps.CatalogueConfig',
+    'apps.settings.apps.SettingsConfig',
+    'apps.portfolio.apps.PortfolioConfig',
+    'apps.partials.apps.PartialsConfig',
+
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -56,6 +57,12 @@ TEMPLATES = [
         },
     },
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
