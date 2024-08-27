@@ -6,7 +6,7 @@ from .abstracts import AbstractImage
 
 class DoublesidedImage(AbstractImage):
     """Inheritor of Image model representing image with several resolutions"""
-    low_src = models.ImageField(upload_to="assets/", verbose_name=_("Low resolution"))
+    low_src = models.ImageField(upload_to="images/", editable=False, verbose_name=_("Low resolution"))
 
     class Meta:
         ordering = ["id"]

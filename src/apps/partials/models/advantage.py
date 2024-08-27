@@ -7,6 +7,7 @@ class FirmAdvantage(AbstractAdvantage):
     purpose = Purposes.FIRM
 
     class Meta:
+        proxy = True
         verbose_name = _("Firm advantage")
         verbose_name_plural = _("Firm advantages")
         db_table = "firm_advantages"
@@ -17,6 +18,7 @@ class MaterialAdvantage(AbstractAdvantage):
     purpose = Purposes.MATERIAL
 
     class Meta:
+        proxy = True
         verbose_name = _("Material advantage")
         verbose_name_plural = _("Material advantages")
         db_table = "material_advantages"

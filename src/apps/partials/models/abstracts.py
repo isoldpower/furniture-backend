@@ -16,7 +16,6 @@ class AbstractAdvantage(models.Model):
 
     class Meta:
         db_table = 'advantages'
-        abstract = True
 
     def __str__(self):
         return "".join([str(self.id), ": ", self.title])
