@@ -3,6 +3,7 @@ from rest_framework import serializers, viewsets
 from .product_material import ProductMaterialSerializer
 from ..models import StockProduct
 from apps.partials.views import DoublesidedImageSerializer
+from ..services.filter_important import get_important_items
 
 
 class StockProductSerializer(serializers.ModelSerializer):
@@ -15,5 +16,8 @@ class StockProductSerializer(serializers.ModelSerializer):
 
 
 class StockProductViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = StockProduct.objects.all()
     serializer_class = StockProductSerializer
+
+    def get_queryset(self):
+        queryset = StockProduct.objects.all()
+        return get_important_items(self, queryset)

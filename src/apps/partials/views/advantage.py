@@ -14,6 +14,13 @@ class AdvantageViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = AbstractAdvantage.objects.all()
     serializer_class = AdvantageSerializer
 
+    def get_queryset(self):
+        queryset = AbstractAdvantage.objects.all()
+        purpose = self.request.query_params.get('purpose')
+        if purpose is not None:
+            queryset = queryset.filter(purpose=purpose)
+        return queryset
+
 
 class FirmAdvantageSerializer(AdvantageSerializer):
     class Meta:
