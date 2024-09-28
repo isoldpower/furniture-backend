@@ -1,7 +1,6 @@
 from rest_framework.routers import DefaultRouter
 
-from apps.partials import ProcessViewSet
-from apps.partials.views import AdvantageViewSet, DoublesidedImageViewSet
+from apps.partials.views import AdvantageViewSet, DoublesidedImageViewSet, ProcessViewSet
 
 router = DefaultRouter()
 router.register(r'advantages', AdvantageViewSet, basename='advantages')

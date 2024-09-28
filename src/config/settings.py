@@ -10,9 +10,8 @@ DEBUG = os.environ.get('DEBUG') == 'True'
 
 ALLOWED_HOSTS = []
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, '/media/')
-
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # Application definition
 
@@ -24,11 +23,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'apps.partials.apps.PartialsConfig',
     'apps.feedback.apps.FeedbackConfig',
     'apps.catalogue.apps.CatalogueConfig',
     'apps.settings.apps.SettingsConfig',
     'apps.portfolio.apps.PortfolioConfig',
-    'apps.partials.apps.PartialsConfig',
 
     'rest_framework',
 ]

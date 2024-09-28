@@ -17,7 +17,7 @@ class MaterialAdvantageAdmin(admin.ModelAdmin):
 
 @admin.register(DoublesidedImage)
 class DoublesidedImageAdmin(admin.ModelAdmin):
-    list_display = ["verbose_name", "src", "low_src"]
-    fields = ["verbose_name", "src", "low_src", "alt"]
+    list_display = ["verbose_name", "src"]
+    fields = ["verbose_name", "src", "alt"]
     search_fields = ["verbose_name"]
 
