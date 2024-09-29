@@ -8,9 +8,8 @@ from apps.partials.models import DoublesidedImage
 
 class StockSection(AbstractSection):
     """Inheritor of AbstractSection model representing a section of StockProducts"""
-    preview_image = models.ForeignKey(DoublesidedImage, null=True, on_delete=models.SET_NULL,
-                                      verbose_name=_("Preview image"))
-    products = models.ManyToManyField(StockProduct, verbose_name=_("Section products"))
+    preview_image = models.ForeignKey(DoublesidedImage, null=True, blank=True, on_delete=models.SET_NULL, verbose_name=_("Preview image"))
+    products = models.ManyToManyField(StockProduct, null=True, blank=True, verbose_name=_("Section products"))
 
     class Meta:
         db_table = 'stock_sections'

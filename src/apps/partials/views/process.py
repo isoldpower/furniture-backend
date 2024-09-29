@@ -6,7 +6,7 @@ from ..models import Process
 class ProcessSerializer(serializers.ModelSerializer):
     class Meta:
         model = Process
-        fields = ['order', 'title', 'paragraph']
+        fields = ['order', 'paragraph']
 
 
 class ProcessViewSet(viewsets.ReadOnlyModelViewSet):

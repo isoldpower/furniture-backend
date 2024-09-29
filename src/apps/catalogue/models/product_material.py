@@ -7,9 +7,9 @@ from apps.partials.models import MaterialAdvantage, DoublesidedImage
 
 class ProductMaterial(AbstractMaterial):
     """Inheritor of Material representing detailed material data"""
-    advantages = models.ManyToManyField(MaterialAdvantage, verbose_name=_("Material advantages"))
-    image = models.ForeignKey(DoublesidedImage, null=True, on_delete=models.SET_NULL, verbose_name=_("Preview image"))
-    important = models.BooleanField(default=False, verbose_name=_("Is important"))
+    advantages = models.ManyToManyField(MaterialAdvantage, null=True, blank=True, verbose_name=_("Material advantages"))
+    image = models.ForeignKey(DoublesidedImage, null=True, blank=True, on_delete=models.SET_NULL, verbose_name=_("Preview image"))
+    important = models.BooleanField(default=False,  verbose_name=_("Is important"))
 
     class Meta:
         db_table = "product_materials"

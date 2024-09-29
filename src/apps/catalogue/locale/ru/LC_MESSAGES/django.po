@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-27 01:09+0500\n"
+"POT-Creation-Date: 2024-09-29 04:52+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,86 +19,93 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
-#: apps.py:8
+
+#: apps/catalogue/apps.py:8
 msgid "Catalogue"
 msgstr "Каталог"
 
-#: models/abstracts.py:7 models/abstracts.py:20 models/abstracts.py:33
+#: apps/catalogue/models/abstracts.py:7 apps/catalogue/models/abstracts.py:20
+#: apps/catalogue/models/abstracts.py:33
 msgid "id"
 msgstr "Идентификатор"
 
-#: models/abstracts.py:8 models/abstracts.py:21 models/abstracts.py:34
+#: apps/catalogue/models/abstracts.py:8 apps/catalogue/models/abstracts.py:21
+#: apps/catalogue/models/abstracts.py:34
 msgid "Title"
 msgstr "Заголовок"
 
-#: models/abstracts.py:9
+#: apps/catalogue/models/abstracts.py:9
 msgid "Main paragraph"
 msgstr "Главный параграф"
 
-#: models/abstracts.py:10
+#: apps/catalogue/models/abstracts.py:10
 msgid "Secondary paragraph"
 msgstr "Второстепенный параграф"
 
-#: models/abstracts.py:12 models/abstracts.py:25 models/abstracts.py:36
+#: apps/catalogue/models/abstracts.py:12 apps/catalogue/models/abstracts.py:25
+#: apps/catalogue/models/abstracts.py:36
 msgid "Href postfix"
 msgstr "Постфикс адреса"
 
-#: models/abstracts.py:22
+#: apps/catalogue/models/abstracts.py:22
 msgid "Description"
 msgstr "Описание"
 
-#: models/abstracts.py:23
+#: apps/catalogue/models/abstracts.py:23
 msgid "Time to produce"
 msgstr "Время на изготовление"
 
-#: models/abstracts.py:24
+#: apps/catalogue/models/abstracts.py:24
 msgid "Estimated cost"
 msgstr "Примерная стоимость"
 
-#: models/abstracts.py:35
+#: apps/catalogue/models/abstracts.py:35
 msgid "Paragraph"
 msgstr "Параграф"
 
-#: models/product_material.py:11
+#: apps/catalogue/models/product_material.py:10
 msgid "Material advantages"
 msgstr "Преимущества материалов"
 
-#: models/product_material.py:12 models/stock_section.py:12
+#: apps/catalogue/models/product_material.py:11
+#: apps/catalogue/models/stock_section.py:12
 msgid "Preview image"
 msgstr "Изображение"
 
-#: models/product_material.py:13 models/stock_product.py:13
+#: apps/catalogue/models/product_material.py:12
+#: apps/catalogue/models/stock_product.py:13
 msgid "Is important"
 msgstr "Важный"
 
-#: models/product_material.py:17
+#: apps/catalogue/models/product_material.py:16
 msgid "Product material"
 msgstr "Материал продукта"
 
-#: models/product_material.py:18 models/stock_product.py:11
+#: apps/catalogue/models/product_material.py:17
+#: apps/catalogue/models/stock_product.py:11
 msgid "Product materials"
 msgstr "Материалы продуктов"
 
-#: models/stock_product.py:12
+#: apps/catalogue/models/stock_product.py:12
 msgid "Product images"
 msgstr "Изображения продукта"
 
-#: models/stock_product.py:17
+#: apps/catalogue/models/stock_product.py:17
 msgid "Stock product"
 msgstr "Продукт в ассортименте"
 
-#: models/stock_product.py:18
+#: apps/catalogue/models/stock_product.py:18
 msgid "Stock products"
 msgstr "Продукты в ассортименте"
 
-#: models/stock_section.py:13
+#: apps/catalogue/models/stock_section.py:13
 msgid "Section products"
 msgstr "Продукты раздела"
 
-#: models/stock_section.py:17
+#: apps/catalogue/models/stock_section.py:17
 msgid "Stock section"
 msgstr "Раздел ассортимента"
 
-#: models/stock_section.py:18
+#: apps/catalogue/models/stock_section.py:18
 msgid "Stock sections"
 msgstr "Разделы ассортимента"

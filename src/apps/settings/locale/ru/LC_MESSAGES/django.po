@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 19:57+0500\n"
+"POT-Creation-Date: 2024-09-29 04:52+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,56 +20,61 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: apps.py:7
+#: apps/settings/apps.py:7
 msgid "Settings"
 msgstr "Настройки"
 
-#: models/abstracts.py:20
-#: msgid "Settings"
+#: apps/settings/models/abstracts.py:20
 msgid "Settings id"
 msgstr "Настройки"
 
-#: models/abstracts.py:21
+#: apps/settings/models/abstracts.py:21
 msgid "Name"
 msgstr "Название"
 
-#: models/abstracts.py:22
+#: apps/settings/models/abstracts.py:22
 msgid "Unique key"
 msgstr "Уникальный ключ"
 
-#: models/abstracts.py:23
-#: msgid "Settings"
+#: apps/settings/models/abstracts.py:23
 msgid "Settings value"
 msgstr "Значение настройки"
 
-#: models/sectioned_settings.py:10
+#: apps/settings/models/sectioned_settings.py:10
 msgid "Related section"
 msgstr "Раздел настроек"
 
-#: models/sectioned_settings.py:24 models/sectioned_settings.py:25
+#: apps/settings/models/sectioned_settings.py:24
+#: apps/settings/models/sectioned_settings.py:25
 msgid "Global Settings"
 msgstr "Общие настройки"
 
-#: models/sectioned_settings.py:33 models/sectioned_settings.py:34
+#: apps/settings/models/sectioned_settings.py:33
+#: apps/settings/models/sectioned_settings.py:34
 msgid "Hero Settings"
 msgstr "Настройки главной секции"
 
-#: models/sectioned_settings.py:42 models/sectioned_settings.py:43
+#: apps/settings/models/sectioned_settings.py:42
+#: apps/settings/models/sectioned_settings.py:43
 msgid "About Settings"
 msgstr "Настройки секции 'О нас'"
 
-#: models/sectioned_settings.py:51 models/sectioned_settings.py:52
+#: apps/settings/models/sectioned_settings.py:51
+#: apps/settings/models/sectioned_settings.py:52
 msgid "Links Settings"
 msgstr "Настройки ссылок"
 
-#: models/sectioned_settings.py:60 models/sectioned_settings.py:61
+#: apps/settings/models/sectioned_settings.py:60
+#: apps/settings/models/sectioned_settings.py:61
 msgid "Address Settings"
 msgstr "Настройки юр.информации"
 
-#: models/sectioned_settings.py:69 models/sectioned_settings.py:70
+#: apps/settings/models/sectioned_settings.py:69
+#: apps/settings/models/sectioned_settings.py:70
 msgid "Catalog Settings"
 msgstr "Настройки каталога"
 
-#: models/sectioned_settings.py:78 models/sectioned_settings.py:79
+#: apps/settings/models/sectioned_settings.py:78
+#: apps/settings/models/sectioned_settings.py:79
 msgid "Quote Settings"
 msgstr "Настройки цитаты"

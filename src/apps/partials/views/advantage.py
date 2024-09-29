@@ -25,10 +25,10 @@ class AdvantageViewSet(viewsets.ReadOnlyModelViewSet):
 class FirmAdvantageSerializer(AdvantageSerializer):
     class Meta:
         model = FirmAdvantage
-        fields = '__all__'
+        fields = AdvantageSerializer.Meta.fields
 
 
 class MaterialAdvantageSerializer(AdvantageSerializer):
     class Meta:
         model = MaterialAdvantage
-        fields = '__all__'
+        fields = AdvantageSerializer.Meta.fields

@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import FirmAdvantage, MaterialAdvantage, DoublesidedImage
+from .models import FirmAdvantage, MaterialAdvantage, DoublesidedImage, Process
 
 
 @admin.register(FirmAdvantage)
@@ -20,4 +20,12 @@ class DoublesidedImageAdmin(admin.ModelAdmin):
     list_display = ["verbose_name", "src", "low_src"]
     fields = ["verbose_name", "src", "alt"]
     search_fields = ["verbose_name"]
+
+
+@admin.register(Process)
+class ProcessAdmin(admin.ModelAdmin):
+    list_filter = ["order"]
+    list_display = ["order", "paragraph"]
+    fields = ["order", "paragraph", "image"]
+    search_fields = ["paragraph"]
 

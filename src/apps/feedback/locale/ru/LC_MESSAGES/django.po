@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 01:36+0500\n"
+"POT-Creation-Date: 2024-09-29 04:52+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,38 +20,38 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: apps.py:7
+#: apps/feedback/apps.py:8
 msgid "Feedback"
 msgstr "Обратная связь"
 
-#: models/abstracts.py:10
+#: apps/feedback/models/abstracts.py:10
 msgid "Request id"
 msgstr "Номер запроса"
 
-#: models/abstracts.py:11
+#: apps/feedback/models/abstracts.py:11
 msgid "Creation date"
 msgstr "Дата создания"
 
-#: models/abstracts.py:12
+#: apps/feedback/models/abstracts.py:12
 msgid "Client name"
 msgstr "Имя клиента"
 
-#: models/abstracts.py:13
+#: apps/feedback/models/abstracts.py:13
 msgid "Product of interest"
 msgstr "Интересующий продукт"
 
-#: models/phone_call.py:9
+#: apps/feedback/models/phone_call.py:9
 msgid "Phone number"
 msgstr "Номер телефона"
 
-#: models/phone_call.py:10
+#: apps/feedback/models/phone_call.py:10
 msgid "Email address"
 msgstr "Электронная почта"
 
-#: models/phone_call.py:13
+#: apps/feedback/models/phone_call.py:13
 msgid "Phone call"
 msgstr "Телефонный звонок"
 
-#: models/phone_call.py:14
+#: apps/feedback/models/phone_call.py:14
 msgid "Phone calls"
 msgstr "Телефонные звонки"

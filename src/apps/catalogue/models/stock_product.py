@@ -9,7 +9,7 @@ from apps.partials.models import DoublesidedImage
 class StockProduct(AbstractProduct):
     """Inheritor of AbstractProduct model representing a product that is available in catalogue"""
     materials = models.ManyToManyField(ProductMaterial, verbose_name=_("Product materials"))
-    images = models.ManyToManyField(DoublesidedImage, verbose_name=_("Product images"))
+    images = models.ManyToManyField(DoublesidedImage, null=True, blank=True, verbose_name=_("Product images"))
     important = models.BooleanField(default=False, verbose_name=_("Is important"))
 
     class Meta:
