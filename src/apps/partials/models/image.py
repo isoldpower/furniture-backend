@@ -23,4 +23,4 @@ class DoublesidedImage(AbstractImage):
         verbose_name_plural = _("Doublesided images")
 
     def __str__(self):
-        return str(self.verbose_name)
+        return str(self.id) + ": " + str(self.verbose_name)

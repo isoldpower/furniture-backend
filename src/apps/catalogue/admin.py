@@ -20,4 +20,4 @@ class DetailedProductAdmin(admin.ModelAdmin):
 @admin.register(StockSection)
 class DetailedSectionAdmin(admin.ModelAdmin):
     search_fields = ["title", "paragraph", "href_postfix"]
-    list_display = ["title", "paragraph", "href_postfix"]
+    list_display = ["title", "href_postfix", "visible_in_header", "visible_in_preview"]
